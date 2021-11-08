@@ -1,4 +1,3 @@
-#programm was maked by Mono_needs_you
 import asyncio
 
 from pywebio import start_server
@@ -6,10 +5,6 @@ from pywebio.input import *
 from pywebio.output import *
 from pywebio.session import defer_call, info as session_info, run_async, run_js
 
-ch1 = input('Привет! выберите опцию!(1 = Лист доступных программ, 2 = обновить программу, 3 = выйти из программы) = ');
-if ch1 == '1':
-  pr1 = input('Выберите программу!(1 = BrowserChat, 2 = calculator ; 3 = выйти) = ');
-    if pr1 = '1':
 chat_msgs = []
 online_users = set()
 
@@ -71,29 +66,3 @@ async def refresh_msg(nickname, msg_box):
 
 if __name__ == "__main__":
     start_server(main, debug=True, port=8080, cdn=False)
-    if pr1 = '2':
-    print("Ноль в качестве знака операции"
-      "\nзавершит работу программы")
-while True:
-    s = input("Знак (+,-,*,/): ")
-    if s == '0':
-        break
-    if s in ('+', '-', '*', '/'):
-        x = float(input("x="))
-        y = float(input("y="))
-        if s == '+':
-            print("%.2f" % (x+y))
-        elif s == '-':
-            print("%.2f" % (x-y))
-        elif s == '*':
-            print("%.2f" % (x*y))
-        elif s == '/':
-            if y != 0:
-                print("%.2f" % (x/y))
-            else:
-                print("Деление на ноль!")
-    else:
-        print("Неверный знак операции!")
-        if pr1 = '3':
-        exit
-
